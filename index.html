@@ -43,9 +43,6 @@
     #header {
       width: 100vw;
       min-height: 55vh;
-      background-image: url("cam2.jpg");
-      background-position: center;
-      background-size: cover;
     }
     
     .container {
@@ -218,6 +215,38 @@
       right: 865px; 
     }
     
+    #bottom {
+      position: absolute;
+      top: 4500px;
+    }
+    
+    #bottom p {
+      position: absolute;
+      right: -1430px;
+    }
+    
+    #bottom h1 {
+      position: absolute;
+      right: -700px;
+    }
+    
+    footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    }
+
+    footer ul {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+    }
+    
+    footer .logo {
+      color: blue;
+    }
+    
   </style>
     <body>
       <section id="header">
@@ -227,8 +256,8 @@
         
               <ul class="nav-links">
                 <li> <a href="https://marine-chloev.github.io/assignment3/"> home </a></li>
-                <li> <a href="#" > projects </a></li>
-                <li> <a href="#" class="onpage"> <h1> about me </h1> </a></li>
+                <li> <a href="https://marine-chloev.github.io/a3-projectpage/" > projects </a></li>
+                <li> <a href="https://marine-chloev.github.io/a3-aboutme/" class="onpage"> <h1> about me </h1> </a></li>
                 <li> <a href="https://marine-chloev.github.io/a3-contactpage/"> contact </a></li>
               </ul>
           </nav>
@@ -308,5 +337,17 @@
         <p>Through my creations, you get to know me on a personal level.  Look for all the aquatic themes in my work—maybe you’ll discover something you didn’t notice the first time.</p>
       </div>
       </section>
+    <section id="bottom">
+    <footer>
+    <ul class="footerlinks">
+      <li><a href="https://marine-chloev.github.io/assignment3/"> home</a></li>
+      <li><a href="https://marine-chloev.github.io/a3-projectpage/"> projects</a></li>
+      <li><a href="https://marine-chloev.github.io/a3-aboutme/"> about me</a></li>
+      <li><a href="https://marine-chloev.github.io/a3-contactpage/"> contact</a></li>
+    </ul>
+    <h1 class="logo"> marine vandame </h1>
+    <p> Thank you for scrolling all the way through </p>
+  </footer>
+  </section>
     </body>
 </html>
