@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> about me </title>
+    <title> projects </title>
   <!--Google Font Embed code-->
   <!-- Barrio/fun font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Poppins&family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+  <!-- Barriecito/fun body font vibes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+  <!-- Mea Culpa/other fun font vibes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
   <!-- Montserrat/body font vibes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Sora:wght@100..800&family=Tenor+Sans&display=swap" rel="stylesheet">
+  
   </head>
   <style>
     *{
@@ -23,6 +32,7 @@
     
     body {
       font-family: 'montserrat', sans-serif;
+      overflow-x: hidden;
     }
     
     a {
@@ -32,8 +42,10 @@
     
     #header {
       width: 100vw;
-      min-height: 100vh;
-
+      min-height: 70vh;
+      background-image: url("cam2.jpg");
+      background-position: center;
+      background-size: cover;
     }
     
     .container {
@@ -45,7 +57,8 @@
     nav{
       display: flex;
       justify-content: space-between;
-      padding: 32px 0; 
+      padding: 32px 0;
+      color: black;
     }
     
     nav ul{
@@ -53,11 +66,16 @@
       list-style: none;
       gap: 32px;
       font-size: 18px;
+      
+    }
+    
+    nav .onpage {
+      font-size: 16px;
+      color: black;
     }
     
     nav .logo {
       font-size: 20px;
-      
     }
     
     .header-content {
@@ -71,31 +89,50 @@
     
     .header-content h1 {
       font-family: 'barrio';
-      font-size: 300px;
-      color: #0A0A0A;
+      font-size: 270px;
+      color: black;
     }
     
     .header-content p {
       font-size: 40px;
     }
     
-       footer {
+    .textbody {
+      margin-top: 0px;
       display: flex;
-      justify-content: space-between;
-      padding: 16px 0;
-      align-items: center;
-    }
+      }
+    
+    .textbody1l h1 {
+      font-family: 'barrio';
+      font-size: 90px;
 
-    footer ul {
-      display: flex;
-      list-style: none;
-      gap: 32px;
     }
     
-    footer .logo {
-      color: blue;
-      
+    .textbody1r h1 {
+      font-family: 'mea culpa';
+      font-weight: 400;
+      font-size: 190px;
+      position: absolute;
     }
+    
+    
+    .textbody p {
+      font-family: 'barriecito';
+      font-size: 50px;
+    }
+        .textbody img {
+      max-height: 500px;   
+      position: absolute;
+      top: 900px;
+    }
+    
+    .textbody2 {
+      position: absolute;
+      top: 1100px;
+      left: 750px;
+      right: 180px;        
+    }
+    
   </style>
     <body>
       <section id="header">
@@ -105,29 +142,30 @@
         
               <ul class="nav-links">
                 <li> <a href="https://marine-chloev.github.io/assignment3/"> home </a></li>
-                <li> <a href="#"> projects </a></li>
+                <li> <a href="#" class="onpage"> <h1> projects </h1> </a></li>
                 <li> <a href="#"> about me </a></li>
-                <li> <a href="#"> contact </a></li>
+                <li> <a href="https://marine-chloev.github.io/a3-contactpage/"> contact </a></li>
               </ul>
           </nav>
+          <div class="header-content">
+        <h1> about me </h1>
+          </div> 
+        </div>
+      </section> 
+      <section class="textbody">
+        <div class="textbody1l">
+          <h1> Hi! my name is </h1>
+        </div>  
+        <div class="textbody1r">
+          <h1> Marine </h1>
+      </div>
+        <img src="aboutme-img2.jpg" alt="description of image">
+      <div class="textbody2">
+        <p> and one thing you should know about me is that I am very proud of my name!          
+        </p>
         </div>
       </section>
-      <section>
-      <div class="header-content">
-        <h1> portfolio </h1>
-        <p> to my portfolio </p>
-        <button class="primary-btn"> discover my work </button>
-      </div>
-        </section>
-       <footer>
-    <ul class="footerlinks">
-      <li><a href="#"> home</a></li>
-      <li><a href="#"> projects</a></li>
-      <li><a href="#"> about me</a></li>
-      <li><a href="#"> contact</a></li>
-    </ul>
-    <h1 class="logo"> marine vandame </h1>
-    <p> Thank you for scrolling all the way through </p>
-  </footer>
+      
+
     </body>
 </html>
